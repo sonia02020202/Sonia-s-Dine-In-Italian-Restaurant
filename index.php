@@ -22,12 +22,32 @@
   </header>
 
   <main>
-    <div class="photo-banner">
-      <img src="img/homeplace.jpg" alt="Restaurant Image">
-    </div>
+  <div class="photo-banner">
+  <img id="banner-image" src="img/homeplace.jpg" alt="Restaurant Image">
+  </div>
     <div class="book-now">
       <a href="reservation.php" class="btn">Book Now</a>
     </div>
   </main>
+  <script>
+  const images = [
+    'img/homeplace.jpg',
+    'img/soniadelight.jpg',
+    'img/pomodoro.jpg'
+  ];
+
+  let currentIndex = 0;
+  const banner = document.getElementById('banner-image');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    banner.style.opacity = 0;
+    setTimeout(() => {
+      banner.src = images[currentIndex];
+      banner.style.opacity = 1;
+    }, 300);
+  }, 3000);
+</script>
+
 </body>
 </html>
