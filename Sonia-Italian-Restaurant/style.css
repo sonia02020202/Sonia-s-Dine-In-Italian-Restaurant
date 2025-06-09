@@ -1,0 +1,115 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background: #fffaf0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo img {
+    border: none;
+    border-radius: 0;
+    display: block;
+    height: 75px;
+    width: 95px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+  }
+  
+  .photo-banner img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    transition: opacity 1.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .book-now {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #d2b48c; /* light brown */
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #a97449; /* mid brown */
+    transform: scale(1.05);
+  }
+/* Responsive layout for tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+    }
+  
+    .book-now {
+      margin: 20px 0;
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Responsive layout for mobile phones and tablets */
+  @media (max-width: 600px) {
+    .logo img {
+      height: 50px;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav a {
+      display: block;
+      margin: 8px 0;
+      font-size: 16px;
+    }
+  
+    .btn {
+      padding: 10px 18px;
+      font-size: 16px;
+    }
+  
+    .photo-banner img {
+      max-height: 250px;
+    }
+  }
+    
