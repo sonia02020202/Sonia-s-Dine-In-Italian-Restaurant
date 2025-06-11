@@ -1,6 +1,43 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: 75px;
+  width: 95px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
+}
+
+/* Menu content */
 .menu-section {
   padding: 40px 20px;
-  background-color: #fffaf0;
 }
 
 .menu-grid {
@@ -13,7 +50,7 @@
 
 .menu-item {
   text-align: center;
-  overflow: hidden; /* important: this allows the zoom effect to show */
+  overflow: hidden;
 }
 
 .menu-item img {
@@ -24,7 +61,6 @@
   object-fit: cover;
   border-radius: 4px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  display: inline-block;
 }
 
 .menu-item:hover img {
@@ -54,29 +90,7 @@
   color: #000;
 }
 
-/* Ensure the same header as index.php */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: white;
-  border-bottom: 1px solid #ccc;
-}
-
-.logo img {
-  height: 75px;
-  width: 95px;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  font-style: italic;
-  color: black;
-}
-
-/*  Responsive Design */
+/* Responsive: Tablet */
 @media (max-width: 1024px) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -86,25 +100,28 @@ nav a {
     height: 60px;
     width: 80px;
   }
+
+  nav a {
+    font-size: 17px;
+    margin: 8px;
+  }
 }
 
+/* Responsive: Mobile */
 @media (max-width: 600px) {
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-
   header {
     flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    margin-top: 10px;
+    align-items: center;
   }
 
   nav a {
     display: block;
-    margin: 8px 0;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
   }
 
   .menu-item img {

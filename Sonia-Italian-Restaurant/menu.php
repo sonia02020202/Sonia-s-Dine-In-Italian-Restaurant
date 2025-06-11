@@ -5,7 +5,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Menu - Sonia’s Fine Dine-In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sonia’s Fine Dine-In Restaurant</title>
   <link rel="stylesheet" href="menu.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     </div>
     <nav>
       <a href="index.php">Home</a>
-      <a href="reservation.php">Reservations</a>
+      <a href="reservations.php">Reservations</a>
       <a href="contact.php">Contact</a>
       <a href="admin_login.php">Admin Login</a>
     </nav>
@@ -37,11 +38,11 @@
           ["img/pollopesto.jpg", "<b>Pollo Pesto Penne</b><br> A delicious dish served with creamy pesto sauce with sundried tomatoes, spinach and chicken", "$55.00"],
           ["img/pomodoro.jpg", "<b>Speghetti al Pomodoro</b><br> Speghetti with tomato sauce cooked with onions, garlic and garnished with basil - a in house favourite ", "$49.00"],
           ["img/veggieburger.jpg", "<b>Veggie Burger</b><br> Real vegetable patty made with checkpeas, deep fried on a toasted bun with mayo, lettuce, onions, tomato and side of fries", "$50.00"],
-          ["img/vegsauceling.jpg", "<b>Sonia`s Vegtable Pasta Sauce</b><br> *chef's choice - homemade leek, tomatoes, onions, garlic, carrots, celery, sweet peppers and cashew nuts blended to create a creamy sauce served your choice Linguini or Speghetti", "$59.00"]
+          ["img/vegsauceling.jpg", "<b>Sonia`s Vegetable Pasta Sauce</b><br> *chef's choice - homemade leek, tomatoes, onions, garlic, carrots, celery, sweet peppers and cashew nuts blended to create a creamy sauce served your choice Linguini or Speghetti", "$59.00"]
         ];
         foreach ($menu_items as $item) {
           echo "<div class='menu-item'>
-                  <img src='{$item[0]}' alt='{$item[1]}'>
+                  <img src='{$item[0]}' alt='Dish Image'>
                   <p class='dish-name'>{$item[1]}</p>
                   <p class='price'>{$item[2]}</p>
                 </div>";

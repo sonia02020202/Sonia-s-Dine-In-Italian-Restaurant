@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sonia’s Fine Dine-In Italian Restaurant</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +16,7 @@
     </div>
     <nav>
       <a href="menu.php">Menu</a>
-      <a href="reservation.php">Reservations</a>
+      <a href="reservations.php">Reservations</a>
       <a href="contact.php">Contact</a>
       <a href="admin_login.php">Admin Login</a>
     </nav>
@@ -26,7 +27,7 @@
       <img id="banner-image" src="img/homeplace.jpg" alt="Restaurant Image">
     </div>
     <div class="book-now">
-      <a href="reservation.php" class="btn">Book Now</a>
+      <a href="reservations.php" class="btn">Book Now</a>
     </div>
   </main>
 

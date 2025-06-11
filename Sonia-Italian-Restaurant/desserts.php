@@ -5,7 +5,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Desserts & Drinks - Sonia’s Fine Dine-In</title>
+  <title>Desserts & Drinks - Sonia’s Fine Dine-In Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="desserts.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
     </div>
     <nav>
       <a href="index.php">Home</a>
-      <a href="reservation.php">Reservations</a>
+      <a href="reservations.php">Reservations</a>
       <a href="contact.php">Contact</a>
       <a href="admin_login.php">Admin Login</a>
     </nav>
@@ -47,10 +48,11 @@
           <li>Coke - $5.25</li>
           <li>Diet coke - $5.50</li>
           <li>Sprite - $4.75</li>
-          <li>gingerale - $5.50
+          <li>gingerale - $5.50</li>
+          <li>Brio - 6.00</li>
           <li>Apple Juice - $5.00</li>
           <li>Orange Juice - $4.80</li>
-          <li>Iced Tea - $4.25</li>
+          
         </ul>
       </div>
     </div>
