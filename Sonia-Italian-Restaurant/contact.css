@@ -1,0 +1,118 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: 75px;
+  width: 95px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #800020; /* Dark burgundy hover */
+}
+
+.contact-container {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.contact-details {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-style: italic; /* Italicized contact information */
+}
+
+.map-container {
+  margin-bottom: 30px;
+}
+
+.about-us {
+  margin-bottom: 40px;
+}
+
+.about-us h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-style: italic; /* Italicized About Us title */
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic; /* Italicized About Us content */
+}
+
+footer {
+  background-color: #c2ac9a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 17px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .logo img {
+    height: 55px;
+    width: auto;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .contact-details,
+  .about-us p {
+    font-size: 16px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
