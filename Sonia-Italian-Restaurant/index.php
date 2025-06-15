@@ -12,7 +12,8 @@
 <body>
   <header>
     <div class="logo">
-      <img src="img/logo.jpg" alt="Restaurant Logo" style="height: 60px;">
+      <img src="img/logo.jpg" alt="Restaurant Logo">
+      <span class="shiny-text">Sonia's Italian Fine Dine-In Restaurant</span>
     </div>
     <nav>
       <a href="menu.php">Menu</a>
@@ -48,7 +49,7 @@
         banner.src = images[currentIndex];
         banner.style.opacity = 1;
       }, 900); // match fade-out time
-    }, 4000); // show each image for 4 seconds
+    }, 3000); // show each image for 3 seconds
   </script>
 </body>
 </html>

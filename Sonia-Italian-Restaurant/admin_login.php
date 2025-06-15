@@ -44,9 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
     <form method="post" autocomplete="off">
       <label>Admin Login:</label>
-      <input type="text" name="username" required autocomplete="off"><br>
+      <input type="text" name="username" required autocomplete="off" title="Case-sensitive. Please enter exactly as registered."><br>
       <label>Password:</label>
-      <input type="password" name="password" required autocomplete="new-password"><br>
+      <input type="password" name="password" required autocomplete="new-password" title="Case-sensitive. Please enter exactly as registered."><br>
       <input type="submit" value="Login">
     </form>
   </div>

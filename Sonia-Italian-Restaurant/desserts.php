@@ -1,5 +1,13 @@
 <?php
 // desserts.php - Sonia’s Desserts & Drinks Page for the restaurant
+require_once "config_admin.php";
+
+// Fetch drinks grouped by category
+$wines_teas = $conn->query("SELECT * FROM drink_items WHERE category = 'wines_teas' ORDER BY id ASC");
+$pops_juices = $conn->query("SELECT * FROM drink_items WHERE category = 'pops_juices' ORDER BY id ASC");
+
+// Fetch desserts from the dessert_items table to be displayed in the desserts section
+$desserts = $conn->query("SELECT * FROM dessert_items ORDER BY id ASC");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,65 +31,57 @@
   </header>
 
   <main class="desserts-page">
-    <h1>Desserts & Drinks</h1>
+    <h1>Drinks</h1>
 
     <div class="drinks-section">
       <div class="column">
         <h2>Wines & Teas</h2>
         <img src="img/redwine.jpg" alt="Wine" class="drink-img">
         <ul>
-          <li>Barolo - $19.90</li>
-          <li>Pinot Grigio - $18.00</li>
-          <li>Merlot - $16.50</li>
-          <li>Shiraz - $17.75</li>
-          <li>Rosé - $20.00</li>
-          <li>Chardonnay - $19.00</li>
-          <li>Green Tea - $10.00</li>
-          <li>Chamomile Tea $10.00</li>
+          <?php while ($row = $wines_teas->fetch_assoc()): ?>
+            <!-- Escape special characters to prevent XSS attacks -->
+            <li><?= htmlspecialchars($row['name']) ?> - $<?= htmlspecialchars($row['price']) ?></li>
+          <?php endwhile; ?>
         </ul>
       </div>
       <div class="column">
         <h2>Pops & Juices</h2>
-        <img src="img/juice.jpg" alt="Pop" class="drink-img">
+        <img src="img/juice.jpg" alt="Juice" class="drink-img">
         <ul>
-          <li>Fiji Water - $5.75</li>
-          <li>Coke - $5.25</li>
-          <li>Diet coke - $5.50</li>
-          <li>Sprite - $4.75</li>
-          <li>gingerale - $5.50</li>
-          <li>Brio - 6.00</li>
-          <li>Apple Juice - $5.00</li>
-          <li>Orange Juice - $4.80</li>
-          
+          <?php while ($row = $pops_juices->fetch_assoc()): ?>
+            <!-- special characters to prevent XSS attacks -->
+            <li><?= htmlspecialchars($row['name']) ?> - $<?= htmlspecialchars($row['price']) ?></li>
+          <?php endwhile; ?>
         </ul>
       </div>
     </div>
 
+    <!-- Desserts section: displays all desserts from the database with image, name, price, and optional description -->
     <div class="dessert-section">
-      <h2>Desserts</h2>
+      <h1>Desserts</h1>
       <div class="dessert-grid">
-        <div class="dessert-item">
-          <p><strong>Cannoli</strong> - $20.00</p>
-          <img src="img/canoli.jpg" alt="Cannoli">
-        </div>
-        <div class="dessert-item">
-          <p><strong>Tiramisu</strong> - $25.00</p>
-          <img src="img/tiramisu.jpg" alt="Tiramisu">
-        </div>
-        <div class="dessert-item">
-          <p><strong>Strawberry Cake</strong> - $25.00</p>
-          <img src="img/strawberry.jpg" alt="Strawberry Shortcake">
-        </div>
-        <div class="dessert-item">
-          <p><strong>Chocolate Pannacotta</strong> - $20.00</p>
-          <img src="img/chocolatepannacotta.jpg" alt="Chocolate Pudding">
-        </div>
+        <?php while ($row = $desserts->fetch_assoc()): ?>
+          <div class="dessert-item">
+            <!--  image path & name for safety -->
+            <img src="<?= htmlspecialchars($row['image']) ?>" alt="<?= htmlspecialchars($row['name']) ?>">
+
+            <!-- Display dessert name and price safely -->
+            <p><strong><?= htmlspecialchars($row['name']) ?></strong> - $<?= htmlspecialchars($row['price']) ?></p>
+
+            <?php if (!empty($row['description'])): ?>
+              <!-- Display dessert description if available, using htmlspecialchars for XSS protection -->
+              <p class="description" style="font-style: italic; font-size: 15px; color: #444;">
+                <?= htmlspecialchars($row['description']) ?>
+              </p>
+            <?php endif; ?>
+          </div>
+        <?php endwhile; ?>
       </div>
     </div>
-   <div class="back-link">
+
+    <div class="back-link">
       <a href="menu.php">← Back to Menu</a>
     </div>
   </main>
 </body>
 </html>
-

@@ -78,6 +78,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <link rel="stylesheet" href="admin_dashboard.css">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Restaurant Logo">
+    </div>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="admin_dashboard.php">Dashboard</a>
+      <a href="logout.php">Logout</a>
+    </nav>
+  </header>
+
   <main class="dashboard">
     <h1>Edit Menu Item</h1>
 

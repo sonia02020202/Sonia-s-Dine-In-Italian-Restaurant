@@ -26,15 +26,23 @@ nav {
   justify-content: center;
 }
 
-nav a {
+/* All link states */
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
   margin: 0 15px;
   text-decoration: none;
   font-style: italic;
   color: black;
-  font-size: 18px; /* Fixed to match homepage */
+  font-size: 18px; 
 }
 
-/* Reservation form styling */
+/* Hover state */
+nav a:hover {
+  color: #800020 !important; /* Dark burgundy hover */
+}
+
 .reservation-page {
   padding: 40px 20px;
   max-width: 600px;
@@ -77,7 +85,7 @@ nav a {
 .reservation-form button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: black;
+  background-color: #a97449;
   color: white;
   border: none;
   cursor: pointer;
@@ -86,9 +94,9 @@ nav a {
   font-size: 16px;
 }
 
-/* Highlight fields with validation issues */
-input:invalid,
-select:invalid {
+/* Highlight fields with validation issues after you submit */
+input.error,
+select.error {
   border: 2px solid red;
   outline: none;
 }
@@ -182,8 +190,20 @@ select:focus {
   }
 
   nav a {
-    font-size: 16px; /* Adjusted for small screens */
+    font-size: 16px;
     display: block;
     margin: 8px 0;
   }
+}
+
+/* Button Hover Zoom Effect */
+.reservation-form button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Button Active (Pressed) Effect */
+.reservation-form button:active {
+  background-color: #d2b48c; /* Light brown */
+  transform: scale(0.98);
 }

@@ -27,12 +27,21 @@ nav {
   justify-content: center;
 }
 
-nav a {
+
+nav a,
+nav a:link,
+nav a:visited,
+nav a:active {
   margin: 0 15px;
   text-decoration: none;
   font-style: italic;
   color: black;
   font-size: 18px;
+}
+
+/* Hover style */
+nav a:hover {
+  color: #800020 !important; /* Dark burgundy */
 }
 
 /* Menu content */

@@ -26,6 +26,10 @@ nav a {
   font-size: 18px; /* Ensure matching homepage size */
 }
 
+nav a:hover {
+  color: #800020; /* Dark burgundy hover */
+}
+
 .desserts-page {
   padding: 40px 20px;
   max-width: 1000px;
@@ -40,6 +44,14 @@ nav a {
   gap: 40px;
   flex-wrap: wrap;
 }
+
+.dessert-item .description {
+  font-size: 15px;
+  color: #555;
+  margin-top: -5px;
+  font-style: italic;
+}
+
 
 .column {
   flex: 1 1 300px;

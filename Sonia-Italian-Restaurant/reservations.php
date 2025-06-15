@@ -34,10 +34,12 @@
       <input type="text" id="last_name" name="last_name" placeholder="Serrano" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required>
 
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="e.g. maria@example.com" required>
+      <input type="email" id="email" name="email" placeholder="sonia@example.com" required>
 
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="\d{3}-\d{3}-\d{4}" title="Phone format: 000-000-0000" required>
+
+<!-- Party size dropdown from 1 to 10 guests to prevent over crowding -->
 
       <label for="party_size">Party Size:</label>
       <select id="party_size" name="party_size" required>
@@ -47,6 +49,7 @@
         <?php endfor; ?>
       </select>
 
+ <!-- Time selection options from 11:00 AM to 10:30 PM, in 30-minute increments -->
       <label for="time">Time:</label>
       <select id="time" name="time" required>
         <option value="">Select time</option>
@@ -76,7 +79,8 @@
       let isValid = true;
       const form = e.target;
       const fields = ['first_name', 'last_name', 'email', 'phone', 'party_size', 'time', 'date'];
-      
+
+ // Check all required fields and highlight if invalid     
       fields.forEach(id => {
         const field = document.getElementById(id);
         field.style.border = ""; // Reset border
@@ -86,6 +90,7 @@
         }
       });
 
+// added  logic to block past dates 
       const dateInput = document.getElementById('date');
       const selectedDate = new Date(dateInput.value);
       const today = new Date();
@@ -95,7 +100,8 @@
         alert("Invalid date: Please select a future date.");
         isValid = false;
       }
-
+      
+   // Stop form from submission if validation fails
       if (!isValid) {
         e.preventDefault(); // Prevent form submission
         alert("Please correct the highlighted fields.");
