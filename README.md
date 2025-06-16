@@ -19,6 +19,7 @@ Formspree – Used to send reservation form submissions to Outlook
 Google Maps Embed API using iframe – Integrated map on Contact page
 
 
+
 🖥️ Public Pages
 index.php – Homepage with logo, image slider and “Book Now” button
 
