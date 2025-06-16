@@ -5,7 +5,7 @@ if (!isset($_SESSION['reservation'])) {
   header("Location: reservations.php");
   exit;
 }
-
+// Retrieve the reservation array from the session
 $res = $_SESSION['reservation'];
 $first_name = htmlspecialchars($res['first_name']);
 $date = date("F j, Y", strtotime($res['date']));
