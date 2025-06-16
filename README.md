@@ -96,6 +96,8 @@ Google Map embedded on the Contact page using iframe
 
 Reservation form connected to Formspree for data retreval directly to the store's contact email and styled with matching layout
 
+Designed for future backend integration (e.g. with Formspree or SMTP email)
+
 Shiny text animation on the logo using CSS - on home page
 
 Full layout and hover consistency across all pages
