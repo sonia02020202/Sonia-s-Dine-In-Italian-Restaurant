@@ -10,13 +10,15 @@ PHP – Backend scripting and CRUD logic
 
 MySQL – Database storage for items
 
-HTML and CSS – Layout and styling
+HTML, Java Script and CSS – Layout and styling
 
 MAMP – Local development environment
 
 Formspree – Used to send reservation form submissions to Outlook
 
 Google Maps Embed API using iframe – Integrated map on Contact page
+
+Infinity Free - For Deployment
 
 _______________________________________________________________________________________
 
