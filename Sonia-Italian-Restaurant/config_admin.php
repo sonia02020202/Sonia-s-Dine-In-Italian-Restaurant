@@ -3,13 +3,13 @@
 define('ADMIN_USERNAME', 'sonia');
 define('ADMIN_PASSWORD', 'foodie123');
 
-// MySQL database connection (for MAMP)
-$servername = "localhost";
-$db_username = "root";
-$db_password = "root"; // default for MAMP
-$database = "restaurant_db"; // 
+// MySQL database connection (for InfinityFree)
+$servername = "sql311.infinityfree.com";
+$db_username = "if0_39239359";
+$db_password = "Sonia20252025"; // ← This is the account password you were given earlier
+$database = "if0_39239359_sonia";
 
-// CreateA connection
+// Create connection
 $conn = new mysqli($servername, $db_username, $db_password, $database);
 
 // Check connection

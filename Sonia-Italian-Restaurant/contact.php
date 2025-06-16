@@ -76,7 +76,7 @@
 
   <footer>
     <p>&copy; <?php echo date("Y"); ?> Sonia’s Italian Fine Dine-In Restaurant</p>
-    <p style="font-size: 12px; font-style: italic;">References: food photos generated from Gemini | Sonia's personal food collection photos</p>
+    <p style="font-size: 12px; font-style: italic;">References: food photos sabrina's photography | Sonia's personal food collection photos</p>
   </footer>
 </body>
 </html>
