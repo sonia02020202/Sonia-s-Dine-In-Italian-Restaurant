@@ -1,0 +1,163 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: 75px;
+  width: 95px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #800020; /* Dark burgundy hover */
+}
+
+.contact-container {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.contact-details {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-style: italic; /* Italicized contact information */
+}
+
+.hours-container {
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: 150px auto;
+  row-gap: 4px;
+  column-gap: 10px;
+  margin-top: 5px;
+}
+
+.hours-grid div:nth-child(even) {
+  font-style: normal; /* Keep time upright for clean alignment */
+}
+
+.map-container {
+  margin-bottom: 30px;
+  border: 2px solid #ccc; /* Border around the map */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about-us {
+  margin-bottom: 40px;
+}
+
+.about-us h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-style: italic; /* Italicized About Us title */
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic; /* Italicized About Us content */
+}
+
+.reviews {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.review {
+  background-color: #f5f0e6;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #a97449;
+  font-size: 17px;
+  font-style: italic;
+}
+
+footer {
+  background-color: #c2ac9a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 17px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .logo img {
+    height: 55px;
+    width: auto;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .contact-details,
+  .about-us p {
+    font-size: 16px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+
+  .hours-grid {
+    grid-template-columns: 120px auto;
+  }
+}

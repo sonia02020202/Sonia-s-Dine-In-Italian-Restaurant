@@ -1,0 +1,71 @@
+-- Drop tables if they exist
+DROP TABLE IF EXISTS menu_items;
+DROP TABLE IF EXISTS dessert_items;
+DROP TABLE IF EXISTS drink_items;
+
+-- Create menu_items table
+CREATE TABLE menu_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description TEXT,
+  price DECIMAL(6,2) NOT NULL,
+  image VARCHAR(255)
+);
+
+-- Insert menu items
+INSERT INTO menu_items (name, description, price, image) VALUES
+('Sonia Delight', '*Chef''s Choice - A penne dish made with white sauce, spinach, bell peppers, onions and garlic', 48.00, 'img/soniadelight.jpg'),
+('Pizza', 'Your choice of any 3 toppings chose from onions, green peppers, banana peppers, pepperoni tomatoes or bacon', 45.00, 'img/pizza.jpg'),
+('Fettuccine Alfredo', 'A traditional dish made with simple ingredients tossed with butter and Parmesan cheese topped with parsely', 42.00, 'img/fettuccine.jpg'),
+('Risotto', 'Cooked in white wine, with mushrooms and onions garnished topped off with chives', 53.00, 'img/risotto.jpg'),
+('Linguini Pesto', 'Linguini pasta served with pesto sauce made with fresh basil, garlic, pine nuts, olive oil and Parmesan cheese', 49.00, 'img/lingpesto.jpg'),
+('Cacio e Pepe', 'Your choice of Speghetti or Linguini pasta cooked with black pepper and Pecorino Romano cheese', 47.00, 'img/cacio.jpg'),
+('Gnocchi', 'Potato dumplings cooked in a tomato sauce and garnished with fresh basil', 40.00, 'img/gnocchi.jpg'),
+('Penne alla Vodka', 'Penne pasta cooked in a vodka sauce, pancetta and garnished with both parsley and basil', 52.00, 'img/pennevodka.jpg'),
+('Pollo Pesto Penne', 'A delicious dish served with creamy pesto sauce with sundried tomatoes, spinach and chicken', 55.00, 'img/pollopesto.jpg'),
+('Speghetti al Pomodoro', 'Speghetti with tomato sauce cooked with onions, garlic and garnished with basil - an in-house favourite', 49.00, 'img/pomodoro.jpg'),
+('Veggie Burger', 'Real vegetable patty made with chickpeas, deep fried on a toasted bun with mayo, lettuce, onions, tomato and side of fries', 50.00, 'img/veggieburger.jpg'),
+('Sonia''s Vegetable Pasta Sauce', '*Chef''s choice - homemade leek, tomatoes, onions, garlic, carrots, celery, sweet peppers and cashew nuts blended to create a creamy sauce served with your choice of Linguini or Speghetti', 59.00, 'img/vegsauceling.jpg');
+
+-- Create dessert_items table
+CREATE TABLE dessert_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  description TEXT,
+  price DECIMAL(5,2) NOT NULL,
+  image VARCHAR(255)
+);
+
+-- Insert dessert items
+INSERT INTO dessert_items (name, description, price, image) VALUES
+('Cannoli', 'Classic Italian pastry filled with sweet ricotta cream', 20.00, 'img/canoli.jpg'),
+('Tiramisu', 'Espresso-soaked ladyfingers layered with mascarpone cream', 25.00, 'img/tiramisu.jpg'),
+('Strawberry Cake', 'Light sponge cake with whipped cream and fresh strawberries', 25.00, 'img/strawberry.jpg'),
+('Chocolate Pannacotta', 'Creamy chocolate pudding with a silky texture', 20.00, 'img/chocolatepannacotta.jpg');
+
+-- Create drink_items table
+CREATE TABLE drink_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  price DECIMAL(5,2) NOT NULL,
+  category VARCHAR(50) NOT NULL
+);
+
+-- Insert drink items
+INSERT INTO drink_items (name, price, category) VALUES
+('Barolo', 19.90, 'wines_teas'),
+('Pinot Grigio', 18.00, 'wines_teas'),
+('Merlot', 16.50, 'wines_teas'),
+('Shiraz', 17.75, 'wines_teas'),
+('Rosé', 20.00, 'wines_teas'),
+('Chardonnay', 19.00, 'wines_teas'),
+('Green Tea', 10.00, 'wines_teas'),
+('Chamomile Tea', 10.00, 'wines_teas'),
+('Fiji Water', 5.75, 'pops_juices'),
+('Coke', 5.25, 'pops_juices'),
+('Diet Coke', 5.50, 'pops_juices'),
+('Sprite', 4.75, 'pops_juices'),
+('Ginger Ale', 5.50, 'pops_juices'),
+('Brio', 6.00, 'pops_juices'),
+('Apple Juice', 5.00, 'pops_juices'),
+('Orange Juice', 4.80, 'pops_juices');
