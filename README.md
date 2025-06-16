@@ -20,6 +20,7 @@ Google Maps Embed API using iframe – Integrated map on Contact page
 
 
 
+
 🖥️ Public Pages
 index.php – Homepage with logo, image slider and “Book Now” button
 
@@ -30,6 +31,8 @@ desserts.php – Static drinks layout and dynamic desserts section
 reservations.php – Custom-designed reservation form with all required fields (name, party size, date, time, phone, email.)
 
 contact.php – Contact info, embedded Google Map, and About Us section, footer informaton
+
+
 
 
 🔐 Admin Area
