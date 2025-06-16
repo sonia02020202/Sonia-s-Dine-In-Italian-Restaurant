@@ -6,7 +6,7 @@ define('ADMIN_PASSWORD', 'foodie123');
 // MySQL database connection (for InfinityFree)
 $servername = "sql311.infinityfree.com";
 $db_username = "if0_39239359";
-$db_password = "Sonia20252025"; // ← This is the account password you were given earlier
+$db_password = "Sonia20252025"; 
 $database = "if0_39239359_sonia";
 
 // Create connection
