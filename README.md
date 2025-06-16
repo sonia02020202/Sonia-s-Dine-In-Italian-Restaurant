@@ -14,7 +14,7 @@ HTML, Java Script and CSS – Layout and styling
 
 MAMP – Local development environment
 
-Formspree – Used to send reservation form submissions to Outlook
+Formspree – Used to send reservation form data submissions to Outlook
 
 Google Maps Embed API using iframe – Integrated map on Contact page
 
