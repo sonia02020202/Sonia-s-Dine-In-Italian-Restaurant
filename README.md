@@ -1,7 +1,7 @@
 # Sonia-s-Dine-In-Italian-Restaurant
 Capstone - Sonia's Fine Dine-In Restaurant is a Dine in restaurant with great quality food
 
-Project Summary – Sonia’s Fine Dine-In Restaurant
+CAPSTONE Project Summary – Sonia’s Fine Dine-In Restaurant
 This project is a fully functional PHP-based restaurant website with front-end and back-end components. It includes both static and dynamic content and showcases CRUD (Create, Read, Update, Delete) functionality for restaurant menu items, desserts, and drinks
 through an admin dashboard.
 
@@ -18,6 +18,7 @@ Formspree – Used to send reservation form submissions to Outlook
 
 Google Maps Embed API using iframe – Integrated map on Contact page
 
+
 🖥️ Public Pages
 index.php – Homepage with logo, image slider and “Book Now” button
 
@@ -28,6 +29,7 @@ desserts.php – Static drinks layout and dynamic desserts section
 reservations.php – Custom-designed reservation form with all required fields (name, party size, date, time, phone, email.)
 
 contact.php – Contact info, embedded Google Map, and About Us section, footer informaton
+
 
 🔐 Admin Area
 admin_login.php – Secure login page (username: **** and Password ****)
@@ -40,6 +42,7 @@ Manage Dessert Items
 
 Manage Drink Items
 
+
 ✅ CRUD Functionality
 Each section (menu, desserts, drinks) includes:
 
@@ -51,12 +54,14 @@ edit_*_item.php – Update item content with optional new image
 
 delete_*_item.php – Securely delete entries from the database
 
+
 🗂️ Database Tables
 menu_items: name, description, price, image_path
 
 dessert_items: name, description, price, image
 
 drink_items: name, price, category (wines_teas, pops_juices)
+
 
 🔒 Security Features
 Password and username are case-sensitive
@@ -70,6 +75,7 @@ Admin logout page with friendly goodbye message
 Image file handling with validation
 
 Headers included on all admin pages for navigation
+
 
 🌐 Extra Features
 Google Map embedded on the Contact page using iframe
