@@ -30,7 +30,11 @@ menu.php – Dynamically displays food items from the database
 
 desserts.php – Static drinks layout and dynamic desserts section
 
-reservations.php – Custom-designed reservation form with all required fields (name, party size, date, time, phone, email.)
+reservations.php – Custom-designed reservation form with all required fields (name, party size, date, time, phone, email.) 
+
+Client-side HTML validation, users unable to submit an incomplete form.
+
+Confirmaton success page with user data displayed.
 
 contact.php – Contact info, embedded Google Map, and About Us section, footer informaton
 
