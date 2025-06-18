@@ -1,5 +1,6 @@
 # Sonia-s-Dine-In-Italian-Restaurant
-Capstone - Sonia's Fine Dine-In Restaurant is a Dine in restaurant with great quality food
+Capstone - Sonia's Fine Dine-In Restaurant is a Dine in restaurant with great quality food.
+This restaurant website is for both Customers and Restaurant Owner.
 
 CAPSTONE Project Summary – Sonia’s Fine Dine-In Restaurant
 This project is a fully functional PHP-based restaurant website with front-end and back-end components. It includes both static and dynamic content and showcases CRUD (Create, Read, Update, Delete) functionality for restaurant menu items, desserts, and drinks
@@ -13,6 +14,8 @@ MySQL – Database storage for items
 HTML, Java Script and CSS – Layout and styling
 
 MAMP – Local development environment
+
+phpMyAdmin – used to manage the MySQL database (tables, data insertion and structure)
 
 Formspree – Used to send reservation form data submissions to Outlook
 
@@ -95,7 +98,7 @@ Headers included on all admin pages for navigation
 ____________________________________________________________________________________________
 
 
-Extra Features
+🌍 Extra Features
 Google Map embedded on the Contact page using iframe
 
 Reservation form connected to Formspree for data retreval directly to the store's contact email and styled with matching layout
@@ -105,6 +108,8 @@ Designed for future backend integration (e.g. with Formspree or SMTP email)
 Shiny text animation on the logo using CSS - on home page
 
 Full layout and hover consistency across all pages
+
+Principles of a UX minimalistic design
 
 
 
